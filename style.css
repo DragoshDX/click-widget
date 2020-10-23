@@ -1,0 +1,130 @@
+/* stage */
+body {
+  background-color: #012d4e;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* stage */
+
+.d-none {
+  display: none;
+}
+
+.click-widget__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #ff2a6d;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 18px;
+}
+
+.click-widget {
+  width: 800px;
+  height: 800px;
+  background-color: #011c39;
+  position: relative;
+  border: 1px solid #6b6c6e;
+  border-radius: 50%;
+  color: #cecece;
+}
+
+.click-widget__label {
+  width: 250px;
+  height: 250px;
+  background-color: #011c39;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6b6c6e;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 22px;
+  text-align: center;
+}
+
+.click-widget__label--1 {
+  top: -77px;
+  right: 111px;
+}
+
+.click-widget__label--2 {
+  top: 170px;
+  left: -116px;
+}
+
+.click-widget__label--3 {
+  bottom: -60px;
+  left: 113px;
+}
+
+.click-widget__label--4 {
+  bottom: 85px;
+  right: -77px;
+}
+
+.click-widget__radio {
+  display: none;
+}
+
+.click-widget__radio:checked + .click-widget__details {
+  display: flex;
+}
+
+.click-widget__radio:checked + .click-widget__details + .click-widget__label {
+  background-color: #05d9e7;
+}
+
+.click-widget__radio:checked
+  + .click-widget__details
+  + .click-widget__label
+  .click-widget__icon {
+  fill: #cecece;
+  stroke: #cecece;
+}
+
+.click-widget__details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #011c39;
+  flex-direction: column;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.click-widget__details--default {
+  display: flex;
+}
+
+.click-widget__details-body {
+  text-align: center;
+  width: 440px;
+}
+
+.click-widget__icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  fill: #05d9e7;
+  stroke: #05d9e7;
+}
+
+.click-widget__icon--cloud {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0;
+}
